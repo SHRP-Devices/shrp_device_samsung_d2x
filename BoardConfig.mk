@@ -73,6 +73,7 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := device/samsung/d2x/prebuilt/recovery_dtbo
 PLATFORM_VERSION := 10
 PLATFORM_SECURITY_PATCH := 2020-05-01
+TW_DEVICE_VERSION := TWRP-3.3.1-103-Team-UB
 
 #SHRP_Variables
 SHRP_PATH := device/samsung/d2x
@@ -81,12 +82,22 @@ SHRP_DEVICE_CODE := d2x
 SHRP_EDL_MODE := 0
 SHRP_EXTERNAL := /external_sd
 SHRP_INTERNAL := /sdcard
-SHRP_OTG := /usbotg
-SHRP_REC := /dev/block/bootdevice/by-name/recovery
-SHRP_REC_TYPE := Treble
-SHRP_DEVICE_TYPE := A-Only
+SHRP_OTG := /usb_otg
 SHRP_FLASH := 1
 SHRP_CUSTOM_FLASHLIGHT := true
-SHRP_FONP_1 := /sys/class/leds/torch-sec1/brightness
+SHRP_FONP_1 := /sys/devices/virtual/camera/flash/rear_flash
+SHRP_FONP_2 := 
+SHRP_FONP_3 := 
+SHRP_FLASH_MAX_BRIGHTNESS := 1
+SHRP_REC := /dev/block/platform/13d60000.ufs/by-name/RECOVERY
+SHRP_AB := false
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A_Only
+SHRP_EXPRESS := true
+SHRP_DARK:= true
 SHRP_STATUSBAR_RIGHT_PADDING := 40
 SHRP_STATUSBAR_LEFT_PADDING := 40
+
+# LZMA Compression
+LZMA_COMPRESSION := -9
+LZMA_RAMDISK_TARGETS := recovery
