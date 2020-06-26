@@ -1,4 +1,4 @@
-# Version 3.3.1-103_ianmacd.
+# Version 3.3.1-106_ianmacd.
 
 # Architecture
 TARGET_ARCH := arm64
@@ -76,7 +76,7 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := device/samsung/d2x/prebuilt/recovery_dtbo
 PLATFORM_VERSION := 10
 PLATFORM_SECURITY_PATCH := 2020-06-01
-TW_DEVICE_VERSION := 104
+TW_DEVICE_VERSION := 106
 
 #SHRP_Variables
 BUILD_SHRP_REC := true
@@ -106,4 +106,3 @@ SHRP_STATUSBAR_LEFT_PADDING := 40
 
 # LZMA Compression
 LZMA_COMPRESSION := -9
-LZMA_RAMDISK_TARGETS := recovery
