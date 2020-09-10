@@ -3,7 +3,7 @@
 # mount point  fstype device                                   device2              flags
 /modem			emmc	/dev/block/platform/13d60000.ufs/by-name/radio 			flags=backup=1;display="Baseband"
 /boot           emmc    /dev/block/platform/13d60000.ufs/by-name/boot
-/cache          ext4	/dev/block/platform/13d60000.ufs/by-name/cache 			flags=backup=1
+/cache          ext4	/dev/block/platform/13d60000.ufs/by-name/cache			 flags=backup=1
 /data			f2fs	/dev/block/platform/13d60000.ufs/by-name/userdata
 /efs			ext4	/dev/block/platform/13d60000.ufs/by-name/efs 			flags=backup=1;display="EFS"
 /product		ext4	/dev/block/platform/13d60000.ufs/by-name/product 		flags=backup=1;display="Product"

@@ -1,4 +1,19 @@
-# Version 3.3.1-106_ianmacd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+# Version 3.4.0-3_ianmacd.
+
+DEVICE_PATH := device/samsung/d2x
 
 # Architecture
 TARGET_ARCH := arm64
@@ -19,8 +34,6 @@ ENABLE_SCHEDBOOST := true
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
-ALLOW_MISSING_DEPENDENCIES=true
-
 # Bootloader
 BOARD_VENDOR := samsung
 TARGET_SOC := exynos9825
@@ -32,10 +45,10 @@ TARGET_NO_RADIOIMAGE := true
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_PREBUILT_KERNEL := device/samsung/d2x/prebuilt/Image
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=exynos9825
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPSC14C001RU
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPSC14C006RU
 
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
@@ -73,10 +86,10 @@ TW_NO_LEGACY_PROPS := true
 TW_FORCE_USE_BUSYBOX := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := device/samsung/d2x/prebuilt/recovery_dtbo
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
 PLATFORM_VERSION := 10
 PLATFORM_SECURITY_PATCH := 2020-09-01
-TW_DEVICE_VERSION := 106
+TW_DEVICE_VERSION := 3
 
 #SHRP_Variables
 BUILD_SHRP_REC := true
