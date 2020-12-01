@@ -17,6 +17,7 @@
 /dtb            emmc   /dev/block/platform/13d60000.ufs/by-name/dtb           flags=backup=1;display="DTB"
 /dtbo           emmc   /dev/block/platform/13d60000.ufs/by-name/dtbo          flags=backup=1;display="DTBO"
 /modem          emmc   /dev/block/platform/13d60000.ufs/by-name/radio         flags=backup=1;display="Baseband"
+/modem_5g       emmc   /dev/block/platform/13d60000.ufs/by-name/radio2        flags=backup=1;display="Baseband (5G)"
 /efs            ext4   /dev/block/platform/13d60000.ufs/by-name/efs           flags=backup=1;display="EFS"
 /misc           emmc   /dev/block/platform/13d60000.ufs/by-name/misc          flags=display="Misc"
 /cache          ext4   /dev/block/platform/13d60000.ufs/by-name/cache         flags=display="Cache"
