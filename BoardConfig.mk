@@ -11,8 +11,6 @@
 # limitations under the License.
 #
 
-PLATFORM_VERSION := 11
-
 DEVICE_PATH := device/samsung/d2x
 
 # Architecture
@@ -87,7 +85,7 @@ TW_FORCE_USE_BUSYBOX := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
-PLATFORM_VERSION := 10
+PLATFORM_VERSION := 11
 PLATFORM_SECURITY_PATCH := 2020-12-01
 TW_DEVICE_VERSION := 3
 
