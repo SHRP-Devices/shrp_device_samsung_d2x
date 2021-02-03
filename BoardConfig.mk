@@ -66,3 +66,31 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 -
 # Include
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
+#SHRP_Variables
+BUILD_SHRP_REC := true
+SHRP_PATH := device/samsung/d2x
+SHRP_MAINTAINER := abun880007
+SHRP_DEVICE_CODE := d2x
+SHRP_EDL_MODE := 0
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/devices/virtual/camera/flash/rear_flash
+SHRP_FONP_2 := 
+SHRP_FONP_3 := 
+SHRP_FLASH_MAX_BRIGHTNESS := 1
+SHRP_REC := /dev/block/platform/13d60000.ufs/by-name/recovery
+SHRP_AB := false
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A_Only
+SHRP_EXPRESS := true
+SHRP_OFFICIAL := true
+SHRP_DARK:= true
+SHRP_ALT_REBOOT := true
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
+
+# LZMA Compression
+LZMA_COMPRESSION := -9
